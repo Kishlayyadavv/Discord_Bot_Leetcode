@@ -1,11 +1,12 @@
 import discord
 from discord.ext import commands, tasks
 import requests
-import config
+import os
 from pymongo import MongoClient
-
+from dotenv import load_dotenv
+load_dotenv()
 # Initialize MongoDB
-mongo_client = MongoClient(config.MONGO_URI)
+mongo_client = MongoClient(os.getenv("MONGO_URI"))
 db = mongo_client.lc_tracker
 users_collection = db.tracked_users
 guilds_collection = db.guilds  # New collection for storing guild-specific data
@@ -203,4 +204,4 @@ async def track_solved_problems():
                 )
                 await default_channel.send(message)
 
-bot.run(config.DISCORD_TOKEN)
+bot.run(os.getenv("DISCORD_TOKEN"))
