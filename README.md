@@ -2,7 +2,7 @@
 # **LeetCode Discord Tracker Bot**
 
 This is a **Discord bot** designed to track and display **LeetCode stats** of users in a server. It fetches the stats using the **LeetCode API**, tracks the user's recent problem submissions, and sends notifications when a user solves new problems.
-Check out the demo video on : https://drive.google.com/file/d/1xrwZvoaUhA-xaVCouLeDEClobY5DgUDX/view
+** Check out the demo video on : https://drive.google.com/file/d/1xrwZvoaUhA-xaVCouLeDEClobY5DgUDX/view
 ---
 
 ## **Features**
